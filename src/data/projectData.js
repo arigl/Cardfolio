@@ -1,9 +1,9 @@
 import wikikeebsImg from "../assets/images/Hero.png";
-import wikikeebs3dImg from "../assets/images/wikikeebs3d.PNG";
+import wikikeebs3dImg from "../assets/images/wikikeebs3d.png";
 import playerxImg from "../assets/images/px1.png";
 import playerxStreamingImg from "../assets/images/ps1.png";
-import lofiHavenImg from "../assets/images/LH1.PNG";
-import valorantTrackerImg from "../assets/images/vt.PNG";
+import lofiHavenImg from "../assets/images/LH1.png";
+import valorantTrackerImg from "../assets/images/vt.png";
 import brainInstituteImg from "../assets/images/sb.png";
 import witchFoodImg from "../assets/images/wf1.png";
 
