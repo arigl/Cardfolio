@@ -1,0 +1,252 @@
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Card dealing animations for each position */
+@keyframes dealCard-0 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dealCard-1 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dealCard-2 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dealCard-3 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dealCard-4 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dealCard-5 {
+  0% {
+    transform: translate(300px, -200px) rotate(20deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0);
+    opacity: 1;
+  }
+}
+
+.animate-dealCard-0 {
+  animation: dealCard-0 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0s;
+}
+
+.animate-dealCard-1 {
+  animation: dealCard-1 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.1s;
+}
+
+.animate-dealCard-2 {
+  animation: dealCard-2 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.2s;
+}
+
+.animate-dealCard-3 {
+  animation: dealCard-3 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.3s;
+}
+
+.animate-dealCard-4 {
+  animation: dealCard-4 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.4s;
+}
+
+.animate-dealCard-5 {
+  animation: dealCard-5 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  animation-delay: 0.5s;
+}
+
+/* Card Dealing Animation */
+@keyframes dealCard {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Card Sorting Animation */
+@keyframes sortCard {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Card Discarding Animation */
+@keyframes discardCard {
+  0% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+/* Card Replacement Animation */
+@keyframes replaceCard {
+  0% {
+    transform: translateX(100px) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-deal {
+  animation: dealCard 0.5s ease-out forwards;
+}
+
+.animate-sort {
+  animation: sortCard 0.3s ease-in-out forwards;
+}
+
+.animate-discard {
+  animation: discardCard 0.5s ease-in forwards;
+}
+
+.animate-replace {
+  animation: replaceCard 0.5s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes backgroundMove {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(2%, 2%) rotate(5deg);
+  }
+  75% {
+    transform: translate(-2%, -2%) rotate(-5deg);
+  }
+}
+
+/* Navigation Styles */
+nav {
+  background: transparent !important;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.animate-background {
+  animation: backgroundMove 20s ease infinite;
+}
+
+@keyframes scoreUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.animate-scoreUp {
+  animation: scoreUp 1s ease-out forwards;
+}
